@@ -1,6 +1,6 @@
 # Real-Estate-Price-Prediction-Using-Random-Forest-and-XGboost
 
-A comprehensive project leveraging data analytics and machine learning to provide actionable insights into real estate trends. This repository demonstrates how predictive modeling, visualization, and interactive dashboards can transform real estate market analysis.
+This is a comprehensive project leveraging data analytics and machine learning to provide actionable insights into real estate trends. This repository demonstrates how predictive modeling, visualization, and interactive dashboards can transform real estate market analysis. In collaboration with [Enock02333](https://github.com/Enock02333)
 
 ---
 
