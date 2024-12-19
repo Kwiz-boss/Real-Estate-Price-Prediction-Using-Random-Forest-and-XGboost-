@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Prediction - Real Estate Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Price Prediction</h1>
+    <form method="POST">
+        <label for="LotArea">Lot Area:</label>
+        <input type="text" id="LotArea" name="LotArea" required>
+        <label for="OverallQual">Overall Quality:</label>
+        <input type="text" id="OverallQual" name="OverallQual" required>
+        <label for="YearBuilt">Year Built:</label>
+        <input type="text" id="YearBuilt" name="YearBuilt" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if predictions %}
+        <h2>Prediction Results</h2>
+        <ul>
+            <li>Random Forest Prediction: {{ predictions['Random Forest Prediction'] }}</li>
+            <li>XGBoost Prediction: {{ predictions['XGBoost Prediction'] }}</li>
+            <li>Ensemble Prediction: {{ predictions['Ensemble Prediction'] }}</li>
+        </ul>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters - Real Estate Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Filter Properties</h1>
+    <form method="POST">
+        <label for="Neighborhood">Neighborhood:</label>
+        <input type="text" id="Neighborhood" name="Neighborhood">
+        <label for="HouseStyle">House Style:</label>
+        <input type="text" id="HouseStyle" name="HouseStyle">
+        <button type="submit">Apply Filters</button>
+    </form>
+    {% if scatter_plot %}
+        <div class="visualization">
+            <h2>Filtered Data Visualization</h2>
+            {{ scatter_plot | safe }}
+        </div>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

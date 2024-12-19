@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations - Real Estate Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Data Visualizations</h1>
+    <div class="visualization">
+        <h2>Price Distribution</h2>
+        {{ price_dist | safe }}
+    </div>
+    <div class="visualization">
+        <h2>Correlation Heatmap</h2>
+        {{ correlation_heatmap | safe }}
+    </div>
+    <a href="/">Back to Home</a>
+</body>
+</html>
